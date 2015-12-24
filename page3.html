@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- 
+   Author: matt delashaw
+   Date:   4/29/2015
+-->
+   <title>Le House</title>
+   <script src="menus.js" type="text/javascript"></script>
+   <script src="slide.js" type="text/javascript"></script>
+   <script src="form.js" type="text/javascript"></script>
+   <script src="ads.js" type="text/javascript"></script>
+   <script src="banner.js" type="text/javascript"></script>
+   <link href="final.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body onload="setTabs();setup();initPage();makeBannerAds();">
+	<audio controls>
+		<source src="audio/Too_Close_To_Home.mp3" type="audio/mpeg"/>
+		Your browser does not support the audio element.
+	</audio>
+	<div id="page">
+		<div id="menu">
+			<ul class="tabMenu">
+				<li class="tab"><a href="index.html">Home</a>
+					<ul style="z-index: 1">
+						<li><a href="index.html#first">This Section</a></li>
+						<li><a href="index.html#second">That Section</a></li>
+					</ul>
+				</li>
+				<li class="tab"><a href="page_2.html">North</a>
+					<ul>
+						<li><a href="page_2.html#third">Pictures of Doge</a></li>
+						<li><a href="page_2.html#fourth">Video of Doge</a></li>
+					</ul>
+				</li>
+				<li class="tab"><a href="#">Mi Casa</a>
+					<ul>
+						<li><a href="page_3.html#fifth">The House</a></li>
+						<li><a href="page_3.html#sixth">Rewards!</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="main">
+		<h1 id="fifth">Home Sweet Home</h1>
+		<p>In May of 2014, my girlfriend and I decided to purchase a house. The competition in the housing market is rediculous so we decided to build. Just try and bid that out from under me! Here's some pics of it.<br /></p>
+		
+		<div id="photos">	
+			<img src="images/house_0.JPG" width="600" height="400" alt="house being built" id="photo" />
+		</div>
+		
+		<div id="bar">
+			<div id="button">&nbsp;</div>
+		</div>
+		
+		<h1 id="sixth">Fill This Out</h1>
+		<p>If you fill out this form, you can be entered to win my neighbor's house. He's old and crappy so screw him.</p>
+		
+		<form id="register" method="post" action="done.html">
+			<table cellspacing="2">
+				<tr>
+					<th colspan="5">Neighbor's House Giveaway</th>
+				</tr>
+				<tr>
+					<th>Name<span>*</span></th>
+					<th>Age<span>*</span></th>
+					<th>Email</th>
+				</tr>
+				<tr>
+					<td><input name="name" id="name" required /></td>
+					<td><input name="age" id="age" required /></td>
+					<td><input name="email" id="email" /></td>
+				</tr>
+				<tr>
+					<td colspan="6">* - Indicates a required field</td>
+				</tr>
+			</table>
+				
+				<p id="psub">
+					<input type="submit" value="Submit Registration" />
+				</p>
+		</form>
+		</div>
+	
+	</div>
+</body>
+</html>
