@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- 
+   Author: matt delashaw
+   Date:   4/29/2015
+-->
+   <title>El Papel Numero Dos</title>
+
+   <script src="menus.js" type="text/javascript"></script>
+   <script src="comments.js" type="text/javascript"></script>
+   <script src="rollover.js" type="text/javascript"></script>
+   <script src="ads.js" type="text/javascript"></script>
+   <script src="banner.js" type="text/javascript"></script>
+   <link href="final.css" rel="stylesheet" type="text/css" />
+   
+</head>
+
+<body onload="rolloverinit();setTabs();init();makeBannerAds();">
+	<audio controls>
+		<source src="audio/Suicide_Blues.mp3" type="audio/mpeg"/>
+		Your browser does not support the audio element.
+	</audio>
+	<div id="page">
+		<div id="menu">
+			<ul class="tabMenu">
+				<li class="tab"><a href="index.html">Home</a>
+					<ul style="z-index: 1">
+						<li><a href="index.html#first">This Section</a></li>
+						<li><a href="index.html#second">That Section</a></li>
+					</ul>
+				</li>
+				<li class="tab"><a href="#">North</a>
+					<ul>
+						<li><a href="page_2.html#third">Pictures of Doge</a></li>
+						<li><a href="page_2.html#fourth">Video of Doge</a></li>
+					</ul>
+				</li>
+				<li class="tab"><a href="page_3.html">Mi Casa</a>
+					<ul>
+						<li><a href="page_3.html#fifth">The House</a></li>
+						<li><a href="page_3.html#sixth">Rewards!</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="main">
+		<h1 id="third">This is Doge</h1>
+		<p>This page will be dedicated to my sanity as of late. This fuzz ball of joy is my Husky North. She has provided me comfort and joy in the darkest of times. She is more than just a pet with unconditional love, but a source of companionship I had long forgotten. Growing up in the country I had a plethora of pets ranging from guinea pigs to horses, wild and tame, but in my opinion nothing can replace the friendship that can be shared between a human and a canine.<br /><img src="images/young1_orig.JPG" width="400" height"600" alt="puppy dog" class="slide"/ ><br /><img src="images/youngToy_orig.JPG" width="400" height="600" alt="pup with toy" class="slide" /><br /><img src="images/fight_orig.JPG" width="400" height="600" alt="sisters fight" class="slide" /><br /><img src="images/stare_orig.JPG" width="400" height="600" alt="puppy stare" class="slide" /><br /><img src="images/naps_orig.JPG" width="400" height="600" alt="puppy naps" class="slide" /></p>
+		<h1 id="fourth">CUTE PUPPY ALERT!!</h1>
+		<p>Action shots of cute little puppy North back in the apartment.<br /><video controls><source src="images/door_stop.MOV" type="video/mp4">Your browser does not support the video tag.</video></p>
+
+		
+		<div id="commentform">
+			<h2>Comments</h2>
+				<fieldset id="CommentField">
+					<label id="CommentLabel" for="commentform">
+						Comment on how precious she is! (only a limit of 100 characters though)
+					</label>
+					<textarea id="comment" rows="" cols=""></textarea>
+					<label id="wordcountLabel" for="wordcount">
+						Character Count:
+						<input type="text" id="wordcount" readonly="readonly" value="0/100" />
+					</label>
+					<input type="submit" value=" Submit Pretty Words " id="subbutton" onclick="submit()" />
+				</fieldset>
+		</div>
+		</div>	
+	</div>
+</body>
+</html>
