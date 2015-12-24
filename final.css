@@ -1,0 +1,68 @@
+/*
+    author: matt delashaw
+	date: 4/30/2015
+*/
+
+body {
+	background: black; 
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	background-color: gray;
+	text-align: center;
+}
+
+p {
+	padding: 40px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(#active) {
+    background-color: #111;
+}
+
+#menu {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding-bottom: 20px;
+}
+
+#main {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#active {
+    background-color: #4CAF50;
+}
+
+#mapContainer{
+	overflow: hidden; height: 300px; width: 300px;
+}
+
+#mapCanvas {
+	height: 100%; width: 100%; max-width: 100%;
+}
