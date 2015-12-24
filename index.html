@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- 
+   Author: matt delashaw
+   Date:   4/29/2015
+-->
+   <title>Bow Ties Are Cool</title>
+   <script src="menus.js" type="text/javascript"></script>
+   <script src="ads.js" type="text/javascript"></script>
+   <script src="banner.js" type="text/javascript"></script>
+   <script src="iframe.js" type="text/javascript"></script>
+   <script src="map.js" type="text/javascript"></script>
+   <link href="final.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body onload="setTabs();makeBannerAds();setupFrame();">
+	<audio controls>
+		<!-- I took off the autoplay feature I did have implemented.-->
+		<source src="audio/The_Last_Pale_Light_in_the_West.mp3" type="audio/mpeg"/>
+		Your browser does not support the audio element.
+	</audio>
+		<div id="page">	
+		<div id="menu">
+			<ul class="tabMenu">
+				<li class="tab"><a href="#">Home</a>
+					<ul style="z-index: 1">
+						<li><a href="index.html#first">This Section</a></li>
+						<li><a href="index.html#second">That Section</a></li>
+					</ul>
+				</li>
+				<li class="tab"><a href="page_2.html">North</a>
+					<ul>
+						<li><a href="page_2.html#third">Pictures of Doge</a></li>
+						<li><a href="page_2.html#fourth">Video of Doge</a></li>
+					</ul>
+				</li>
+				<li class="tab"><a href="page_3.html">Mi Casa</a>
+					<ul>
+						<li><a href="page_3.html#fifth">The House</a></li>
+						<li><a href="page_3.html#sixth">Rewards!</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div id="main">
+		<h1 id="first">Recent Things and Stuff</h1>
+		<p>I guess I'll make this about me kinda. I've got an old website I made from web development I'll steal some stuff from versus using lorem ipsum. I'll post some pictures and stuff with a little about myself, mostly my dog and some recent events. Don't think I'm conceited or arrogant, the old assignment we were supposed to explain how "cool" we were. Whatever. Things and stuff. I know good food, <a href="http://www.urbanspoon.com/u/profile/783369">my Urbanspoon profile</a>, <a href="http://www.yelp.com/user_details?userid=Pq092kIE76rwbgMlmHNk3A"> and my Yelp profile</a>. Granted not all the places I've ate at are on these, but it's a sample.</p>
+		<p>I grew up in the country, so I have a green thumb and love the outdoors.<br /><img src="images/ar15.jpg" alt="gun" width="200" height="300" /><img src="images/moon.jpg" alt="burninate" width="200" height="300" /><br /></p>
+		<h1 id="second">More On Outdoors</h1>
+		<p>Ok so I can't help but sharing. This is an avocado I grew from an avocado pit, from and avocado bought from the store.<br /><img src="images/not_from_mexico.jpg" alt="avocado pit sprout" width="200" height="300" /><img src="images/IMG_3878.jpg" alt="avocado growing" width="200" height="300" /><img src="images/IMG_4059.jpg" alt="avocado even bigger" width="200" height="300" /></p>
+		<p>This is some everyday household objects I loaded with explosive targets to add a little twist to sighting in my hunting rifles. This first video would be a set of pre-fabricated cabinets.<br /><video controls><source src="images/boom.MOV" type="video/mp4">Your browser does not support the video tag.</video><br />
+			This next video would be a vacuum that I diagnosed as a blown motor after taking it apart. The cost of repairing it would be just as much as a new one so it ended up down range. For your viewing pleasure, this video is provided in slow motion.<br /><video width="320" height="568" controls><source src="images/vacuum.MOV" type="video/mp4">Your browser does not support the video tag.</video><br /></p>
+		<p>
+			<img id="mapimg" src="images/map.png" usemap="#map" alt="map of my world" />	
+			<iframe id="places" name="places" src="blank.htm"></iframe>
+		</p>
+		</div>
+	
+	</div>
+	
+	<map id="map" name="map">
+		<area shape="circle" alt="Callisburg" href="#" coords="210, 35 , 20" />
+		<area shape="circle" alt="Denton" href="#" coords="150, 310, 10" />
+		<area shape="circle" alt="Cheaper Than Dirt" href="#" coords="375, 320, 10" />
+		<area shape="circle" alt="Paradise Siberians" href="#" coords="400, 400, 40" />
+	</map>
+</body>
+</html>
